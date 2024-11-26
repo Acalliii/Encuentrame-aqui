@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encuéntrame Aquí</title>
     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
 </head>
 <body>
     <a-scene>
         <a-sky color="#f2f7ff"></a-sky>
+        <a-entity environment="preset: dream; dressingAmount: 500; ground:spikes"></a-entity>
         <a-entity
-        
          text="value:ENCUÉNTRAME AQUÍ;
          font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json;
          fontImage: assets/fonts/abcorregido-msdf/abcorregido.png;
