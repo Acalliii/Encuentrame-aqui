@@ -17,6 +17,7 @@
 <body>
     <a-scene>
         <a-sky atmosphere="color:#f2f7ff"></a-sky>
+        <a-light type="ambient" color="#222"></a-light>
         <a-entity environment="preset:goldmine; dressing:torii; skyType:color; skyColor:#f2f7ff; groundColor:#f2f7ff; dressingAmount:1; ground:flat"></a-entity>
         <a-entity
          text="value:ENCUÉNTRAME AQUÍ;
@@ -38,6 +39,12 @@
          scale="2 2 1"
          position="0 1.7 0">
         </a-entity>
+        <a-entity id="rig" movement-controls position="0 0 5">
+            <a-entity id="camera"
+                      camera
+                      position="0 1.6 0"
+                      look-controls="pointerLockEnabled: true"></a-entity>
+          </a-entity>
         <a-entity class="environmentDressing environment; dressingVariance: 0 0 0" active="true" position="-48.63358 0 0"></a-entity>
         <a-box static-body position="13.99588 2.32389 -0.01391" rotation="0.402 90.15 0.265" color="#929393" scale="35.621 5.973 1"></a-box>
         <a-box static-body position="-14.29689 2.46041 0.08241" rotation="0.402 90.15 0.265" color="#929393" scale="35.621 5.973 1"></a-box>
