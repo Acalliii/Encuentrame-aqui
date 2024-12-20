@@ -59,16 +59,18 @@
                 </a-entity>
 
                 <!--Textos de las obras-->
-                <a-assets>
-                    <img id="my-image" src="">
-                  </a-assets>
 
         <!--Obras de la galería-->
             <a-assets>
-             <img id="damian" src="assets/images/autores/damian_ortega.jpg">
+                <img id="claude" src="assets/images/autores/claude_cahun.jpeg">
+                <img id="damian" src="assets/images/autores/damian_ortega.jpg">
+                <img id="graciela" src="assets/images/autores/graciela_iturbide.jpeg">
+                <img id="juan" src="assets/images/autores/juanpa_eche.jpeg">
+                <img id="confesiones" src="assets/images/piezas/confesiones_inconfesas.png">
+                <img id="futuros" src="assets/images/piezas/futurosextraños.jpg">
+                <img id="mascaras" src="assets/images/piezas/Mascaras.jpg">
+                <img id="quince" src="assets/images/piezas/quince_años.jpeg">
             </a-assets>
-          <a-image src="assets/images/autores/damian_ortega.jpg" scale="5.332 5.663 3" position="-32.549 6.000 -7.050" rotation="0 270.000 0" ></a-image>
-
 
 
         <!--Movilidad a través del Laberinto (aún no se cuentan con colisiones)-->
@@ -123,18 +125,13 @@
                 <a-box static-body="sphereRadius: NaN" position="-29.01145 3.44276 -33.37269" rotation="0.402 180 0.265" color="#929393" scale="8.58679 7.409 0.6" velocity=""></a-box>
                 <a-box static-body="sphereRadius: NaN" position="-28.76871 3.56588 -35.44844" rotation="0.767 -90 0.93" color="#929393" scale="4.68696 7.409 0.6" velocity=""></a-box>
                 <a-box static-body="sphereRadius: NaN" position="-18.47703 3.65419 -27.99178" rotation="0.767 -90 0.93" color="#929393" scale="4.171 7.409 0.6" velocity=""></a-box>
-                <a-box static-body="sphereRadius: NaN" position="-23.67787 3.566 -51.92568" rotation="0.767 -90 0.93" color="#929393" scale="4.687 7.409 0.6" velocity=""></a-box>
+                <a-box static-body="sphereRadius: NaN" position="-30.79167 3.488 -12.41359" rotation="0.402 180 0.265" color="#929393" scale="4.245 7.409 0.6" velocity=""></a-box>
+                <a-box static-body="sphereRadius: NaN" position="-28.76871 3.56588 -43.61485" rotation="0.767 -90 0.93" color="#929393" scale="4.68696 7.409 0.6" velocity=""></a-box>
                 <a-box static-body="sphereRadius: NaN" position="-24.8143 3.44276 -41.52581" rotation="0.402 180 0.265" color="#929393" scale="8.58679 7.409 0.6" velocity=""></a-box>
                 <a-box static-body="sphereRadius: NaN" position="-14.35558 3.48653 -41.52654" rotation="0.402 180 0.265" color="#929393" scale="5.05498 7.409 0.6" velocity=""></a-box>
                 <a-box static-body="sphereRadius: NaN" position="-16.55236 3.82834 -37.82011" rotation="0.767 -90 0.93" color="#929393" scale="7.94795 7.409 0.6" velocity=""></a-box>
                 <a-box static-body="sphereRadius: NaN" position="-16.55236 3.82834 -45.59129" rotation="0.767 -90 0.93" color="#929393" scale="7.94795 7.409 0.6" velocity=""></a-box>
                 <a-box static-body="sphereRadius: NaN" position="-20.74885 3.56588 -43.61485" rotation="0.767 -90 0.93" color="#929393" scale="4.68696 7.409 0.6" velocity=""></a-box>
-                <a-box static-body="sphereRadius: NaN" position="-29.2711 3.44096 -45.69472" rotation="0.402 180 0.265" color="#929393" scale="8.06495 7.409 0.6" velocity=""></a-box>
-                <a-box static-body="sphereRadius: NaN" position="-20.16426 3.42149 -49.84994" rotation="0.402 180 0.265" color="#929393" scale="7.70431 7.409 0.6" velocity=""></a-box>
-                <a-box static-body="sphereRadius: NaN" position="-2.43671 3.828 -54.20144" rotation="0.767 -90 0.93" color="#929393" scale="7.948 7.409 0.6" velocity=""></a-box>
-                <a-box static-body="sphereRadius: NaN" position="-28.20096 3.828 -53.56557" rotation="0.767 -90 0.93" color="#929393" scale="7.948 7.409 0.6" velocity=""></a-box>
-                <a-box static-body="sphereRadius: NaN" position="-25.90418 3.43075 -54.10349" rotation="0.402 180 0.265" color="#929393" scale="4.9745 7.409 0.6" velocity=""></a-box>
-                <a-box static-body="sphereRadius: NaN" position="-24.76203 3.54 -63.6882" rotation="0.402 180 0.265" color="#929393" scale="16.932 7.409 0.6" velocity=""></a-box>
 
             <!--Esquinas y entradas-->
             <a-cylinder color="#454545" height="3" radius="1.5" position="-4.35345 3.77277 -3.23554" scale="0.38967 2.68421 0.38926"></a-cylinder>
@@ -160,16 +157,16 @@
 
             <!--Sala central-->
             <a-assets>
-                <a-asset-item id="salarellena2-obj" src="salarellena2.obj"></a-asset-item>
-                <a-asset-item id="salarellena2-mtl" src="salarellena2.mtl"></a-asset-item>
+                <a-asset-item id="salarellena-obj" src="salarellena.obj"></a-asset-item>
+                <a-asset-item id="salarellena-mtl" src="salarellena.mtl"></a-asset-item>
             </a-assets>
-            <a-entity obj-model="mtl: assets/blender/salarellena2.mtl; obj: assets/blender/salarellena2.obj" position="-1.65107 -2.04832 -36.47083" visible="true" scale="1.86672 1.464 1.92526" rotation="0 -0.5254022981349649 0"></a-entity>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="-8.504 3.773 -29.633" scale="0.78154 2.684 0.77005"></a-cylinder>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="-11.42276 3.773 -35.7236" scale="0.78154 2.684 0.77005"></a-cylinder>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="12.03286 3.773 -35.59798" scale="0.78154 2.684 0.77005"></a-cylinder>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="8.87218 3.773 -29.633" scale="0.78154 2.684 0.77005"></a-cylinder>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="3.40867 3.773 -50.49237" scale="0.78154 2.684 0.77005"></a-cylinder>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="-2.44306 3.773 -50.52779" scale="0.78154 2.684 0.77005"></a-cylinder>
+            <a-entity obj-model="mtl: assets/blender/salarellena.mtl; obj: assets/blender/salarellena.obj" position="-1.65107 -2.04832 -36.47083" visible="true" scale="1.86672 1.464 1.92526" rotation="0 -0.5254022981349649 0"></a-entity>
+            <a-cylinder color="#d41515" height="3" radius="1.5" position="-8.504 3.773 -29.633" scale="1.042 2.684 1.10232"></a-cylinder>
+            <a-cylinder color="#d41515" height="3" radius="1.5" position="-11.3063 3.773 -35.59798" scale="1.042 2.684 1.10232"></a-cylinder>
+            <a-cylinder color="#d41515" height="3" radius="1.5" position="12.03286 3.773 -35.59798" scale="1.042 2.684 1.10232"></a-cylinder>
+            <a-cylinder color="#d41515" height="3" radius="1.5" position="8.87218 3.773 -29.633" scale="1.042 2.684 1.10232"></a-cylinder>
+            <a-cylinder color="#d41515" height="3" radius="1.5" position="3.78696 3.773 -50.26801" scale="1.042 2.684 1.10232"></a-cylinder>
+            <a-cylinder color="#d41515" height="3" radius="1.5" position="-2.78587 3.773 -50.26801" scale="1.042 2.684 1.10232"></a-cylinder>
 
             <!--Mapa-->
 
