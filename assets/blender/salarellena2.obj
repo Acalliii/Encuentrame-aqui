@@ -1,6 +1,6 @@
 # Blender 4.2.0
 # www.blender.org
-mtllib salarellena.mtl
+mtllib salarellena2.mtl
 o Cylinder
 v 2.434935 0.504775 -7.849630
 v 2.235914 6.504775 -6.849088
