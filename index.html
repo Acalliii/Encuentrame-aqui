@@ -91,8 +91,7 @@
                 <img id="mascaras" src="assets/images/piezas/Mascaras.jpg">
                 <img id="quince" src="assets/images/piezas/quince_años.jpeg">
             </a-assets>
-            <a-box src="assets/images/autores/damian_ortega.jpg" scale="2.500 4.000 0.250" position="-12.346 3.603 -8.907" rotation="0 90.000 0"></a-box>
-
+            <a-box src="assets/images/autores/damian_ortega.jpg" scale="2.5 4 0.25" position="-12.31343 3.78527 -8.896" rotation="0 90 0"></a-box>
         <!--Movilidad a través del Laberinto (aún no se cuentan con colisiones)-->
         <a-entity id="rig" movement-controls position="0 0 4">
             <a-entity id="camera"
@@ -485,10 +484,22 @@
                 <a-cylinder color="#454545" height="3" radius="1.5" position="-15.99472 3.31 -59.09279" scale="0.21 2.684 0.21"></a-cylinder>
                 <a-cylinder color="#454545" height="3" radius="1.5" position="-15.99472 3.31 -54.56079" scale="0.21 2.684 0.21"></a-cylinder>
             
-            <!--Letreros de las entradas-->
-            <a-box static-body="sphereRadius: NaN" position="-0.13896 6.77189 3.23161" rotation="0 -180 0" color="#e3aaaa" scale="10.1034 1.64559 0.6" velocity=""></a-box>
-            <a-box static-body="sphereRadius: NaN" position="-28.5168 6.73896 -75.258" rotation="0 -180 0" color="#e3aaaa" scale="10.72095 1.7466 0.6" velocity=""></a-box>
-            <a-box static-body="sphereRadius: NaN" position="39.279 6.772 -63.79699" rotation="0 -90 0" color="#e3aaaa" scale="10.60191 1.646 0.6" velocity=""></a-box>
+            <!--Letreros-->
+
+                <!--ENTRADAS-->
+                <a-box static-body="sphereRadius: NaN" position="-0.13896 6.77189 3.23161" rotation="0 -180 0" color="#e3aaaa" scale="10.1034 1.64559 0.6" velocity=""></a-box>
+                <a-box static-body="sphereRadius: NaN" position="-28.5168 6.73896 -75.258" rotation="0 -180 0" color="#e3aaaa" scale="10.72095 1.7466 0.6" velocity=""></a-box>
+                <a-box static-body="sphereRadius: NaN" position="39.279 6.772 -63.79699" rotation="0 -90 0" color="#e3aaaa" scale="10.60191 1.646 0.6" velocity=""></a-box>
+
+                <!--SALAS-->
+                    <!--DAMIÁN ORTEGA-->
+
+                    <!--JUAN PABLO ECHEVERRI-->
+
+                    <!--CLAUDE CAHUN-->
+
+                    <!--GRACIELA ITURBIDE-->
+
             
             <!--Máscaras-->
                 <a-assets>
@@ -497,20 +508,29 @@
                 </a-assets>
 
                 <!--Dentro del laberinto-->
-                <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-32.65054 3.435 -5.02136" rotation="-2.087285247661589 -90.43852317242478 -0.8812090889112061" scale="0.698 0.632 1"></a-entity>
+                <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-32.68523 3.435 -4.9368" rotation="-2.087285247661589 -90.43852317242478 -0.8812090889112061" scale="0.698 0.632 0.67"></a-entity>
+                <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-27.97849 3.435 -28.02554" rotation="-2.087285247661589 -90.43852317242478 -0.8812090889112061" scale="0.698 0.632 0.67"></a-entity>
+                <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-23.43478 3.435 -12.73525" rotation="-2.087285247661589 -90.43852317242478 -0.8812090889112061" scale="0.698 0.632 0.67"></a-entity>
+                <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-11.65831 3.435 -8.87732" rotation="-2.087285247661589 -90.43852317242478 -0.8812090889112061" scale="0.698 0.632 0.67"></a-entity>
+                <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-23.9332 3.435 -52.29362" rotation="-2.087 -90.43900000000001 -0.881" scale="0.698 0.632 0.67"></a-entity>
+                <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="32.028 3.435 -5.22663" rotation="0 90.42591810093191 0" scale="0.698 0.632 0.67"></a-entity>
+                <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="2.84186 3.435 -18.16608" rotation="0 -180 0" scale="0.698 0.632 0.67"></a-entity>
+                <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="19.58006 3.435 -33.7819" rotation="0 -180 0" scale="0.698 0.632 0.67"></a-entity>
+                <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-18.47698 4.847 -30.1415" rotation="" scale="0.698 0.632 0.67"></a-entity>
+                <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="30.22025 4.847 -11.059" rotation="" scale="0.698 0.632 0.67"></a-entity>
                 
                 <!--En las entradas-->
                     <!--Entrada central-->
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="2.29429 4.847 3.407" rotation="0 -180 0" scale="0.698 0.632 1"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-2.647 4.847 3.40712" rotation="0 -180 0" scale="0.698 0.632 1"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="2.29429 4.847 3.407" rotation="0 -180 0" scale="0.698 0.632 0.670"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-2.647 4.847 3.40712" rotation="0 -180 0" scale="0.698 0.632 0.670"></a-entity>
 
                     <!--Entrada trasera-->
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-25.58882 4.847 -75.42979" rotation="" scale="0.698 0.632 1"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-31.48317 4.847 -75.42979" rotation="" scale="0.698 0.632 1"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-25.58882 4.847 -75.42979" rotation="" scale="0.698 0.632 0.670"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-31.48317 4.847 -75.42979" rotation="" scale="0.698 0.632 0.670"></a-entity>
 
                     <!--Entrada lateral-->
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="39.46476 4.847 -60.76487" rotation="0 -90 0" scale="0.698 0.632 1"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="39.46476 4.847 -66.77751" rotation="0 -90 0" scale="0.698 0.632 1"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="39.46476 4.847 -60.76487" rotation="0 -90 0" scale="0.698 0.632 0.670"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="39.46476 4.847 -66.77751" rotation="0 -90 0" scale="0.698 0.632 0.670"></a-entity>
 
             <!--Sala central-->
             <a-assets>
@@ -527,7 +547,7 @@
             <a-cylinder color="#454545" height="3" radius="1.5" position="2.94271 3.77277 -48.75915" scale="0.64477 2.684 0.66272"></a-cylinder>
             <a-cylinder color="#454545" height="3" radius="1.5" position="-2.00686 3.77277 -48.80581" scale="0.645 2.684 0.663"></a-cylinder>
 
-            <!--Mapa-->
+            <!--Mapas-->
 
     </a-scene>
 </body>
