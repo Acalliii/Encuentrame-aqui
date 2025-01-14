@@ -42,6 +42,7 @@
         visible="true"
         position="3.730 0.040 -34.986" scale="4.600 1.000 4.600"
         gltf-model="#navmesh"></a-entity>
+        
          <!--Textos de la galería-->
 
             <!--Títulos de cada entrada-->
@@ -138,7 +139,9 @@
                 </a-entity>
                 <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: Juan Pablo Echeverrí. FuturoSEXtraños. 2016. Impresiones inkjet, marcos de madera. 41.9 x 41.9 cm." scale="4.082 7.403 3.000" position="11.466 4.264 -7.313" rotation="0 -180.000 0">
                 </a-entity>
-                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: Claude Cahun, Confesiones Inconfesas (Aveux non avenus). 14 x 19,5 cm; tapa blanda con solapas; 272 páginas. ISBN: 978-84-121660-9-5. 1930. Editorial Colección Áurea: WunderKammer." scale="4.702 7.563 3" position="-0.629 3.823 -68.017" rotation="0 0 0">
+                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: Claude Cahun, Confesiones Inconfesas (Aveux non avenus). 14 x 19,5 cm, tapa blanda con solapas, 272 páginas. ISBN: 978-84-121660-9-5. 1930. Editorial Colección Áurea: WunderKammer." scale="4.702 7.563 3" position="-0.629 3.823 -68.017" rotation="0 0 0">
+                </a-entity>
+                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: Claude Cahun, Untitled.\n Self Portrait, 1928." scale="4.702 7.563 3" position="-17.22977 3.823 -58.57362" rotation="0 1.189460382691589 0">
                 </a-entity>
                 <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: Graciela Iturbide, Quince Años. Juchitán, México, 1986. Papel baritado con emulsión de gelatina y plata. Medidas papel: 50,5 x 40,6 cm." scale="4.814 10.039 3.000" position="19.811 3.540 -50.511" rotation="0 0 0">
                 </a-entity>
@@ -156,6 +159,8 @@
                 <img id="futuros" src="assets/images/piezas/futurosextraños.jpg">
                 <img id="mascaras" src="assets/images/piezas/Mascaras.jpg">
                 <img id="quince" src="assets/images/piezas/quince_años.jpeg">
+                <img id="1928" src="assets/images/piezas/fotomontaje_claude.png">
+
             </a-assets>
             <a-box src="assets/images/autores/damian_ortega.jpg" scale="2.5 4 0.25" position="-12.31343 3.78527 -8.896" rotation="0 90 0"></a-box>
             <!--Sala Damian-->
@@ -167,6 +172,7 @@
             <!--Sala Claude-->
             <a-box src="assets/images/autores/claude_cahun.jpeg" scale="4.000 6.000 0.250" position="-16.866 3.796 -46.697" rotation="0 90.000 0"></a-box>
             <a-box src="assets/images/piezas/confesiones_inconfesas.png" scale="4.000 6.000 0.250" position="-5.567 3.551 -68.023" rotation="0 0 0"></a-box>
+            <a-box src="assets/images/piezas/fotomontaje_claude.png" scale="3.557 6 0.25" position="-21.66436 3.724 -58.63294" rotation="0 -180 0"></a-box>
             <!--Sala Graciela-->
             <a-box src="assets/images/autores/graciela_iturbide.jpeg" scale="4.000 6.000 0.250" position="18.085 3.671 -61.600" rotation="0 90.000 0"></a-box>
             <a-box src="assets/images/piezas/quince_años.jpeg" scale="4.000 6.000 0.250" position="24.576 3.706 -50.441" rotation="0 0 0"></a-box>
@@ -575,20 +581,34 @@
                     <!--DAMIÁN ORTEGA-->
                     <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-32.67585 4.56935 -5.29232" rotation="0 -91.09455984784961 0" scale="0.698 0.632 0.67"></a-entity>
                     <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-27.91661 4.569 -27.98118" rotation="0 -91.095 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-30.8848 4.424 -54.8806" rotation="0 -0.957 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-16.93507 4.424 -14.54339" rotation="0 90.207 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-11.63146 4.51629 -8.92039" rotation="0 -91.095 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-23.40499 4.56935 -12.71846" rotation="0 -91.09455984784961 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-9.91297 4.424 -20.64912" rotation="0 -0.957 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-18.31221 4.424 -20.36388" rotation="0 90.207 0" scale="0.698 0.632 0.67"></a-entity>
 
                     <!--JUAN PABLO ECHEVERRI-->
                     <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="31.99849 4.424 -6.917" rotation="0 90.207 0" scale="0.698 0.632 0.67"></a-entity>
                     <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="17.081 4.424 -11.12539" rotation="0 -0.957 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="2.73041 5.19298 -18.10961" rotation="0 -180 0" scale="0.698 0.632 0.67"></a-entity>
                     <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="19.52929 5.193 -33.73915" rotation="0 -180 0" scale="0.698 0.632 0.67"></a-entity>
                     <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="14.08354 4.424 -23.60054" rotation="0 90.207 0" scale="0.698 0.632 0.67"></a-entity>
                     <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="19.27991 4.79161 -19.26997" rotation="0 -91.09455984784961 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="2.81938 5.193 -18.11026" rotation="0 -180 0" scale="0.698 0.632 0.67"></a-entity>
 
                     <!--CLAUDE CAHUN-->
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-20.08938 4.424 -65.7396" rotation="0 90.207 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-10.51878 4.228 -44.09061" rotation="0 55.932712918466095 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-9.67512 4.424 -53.59195" rotation="0 -0.957 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-30.93109 4.424 -54.87679" rotation="0 -0.957 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-23.94219 4.569 -52.26633" rotation="0 -91.095 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-24.00054 4.569 -39.63828" rotation="0 -91.095 0" scale="0.698 0.632 0.67"></a-entity>
 
                     <!--GRACIELA ITURBIDE-->
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="22.81998 4.792 -66.06877" rotation="0 -91.095 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="21.6961 5.193 -46.34621" rotation="0 -180 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="27.57195 4.424 -53.01743" rotation="0 90.207 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="5.3378 4.792 -66.19279" rotation="0 -91.095 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="12.20217 4.228 -42.33897" rotation="0 -63.13593831885081 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="7.9731 5.193 -59.31749" rotation="0 -180 0" scale="0.698 0.632 0.67"></a-entity>
                 
                 <!--En las entradas-->
                     <!--Entrada central-->
@@ -630,7 +650,6 @@
                         <a-entity geometry="primitive: torus; radius: 2; radiusTubular: 0.5" material="side: double; color: #9b9b9b" position="39.46476 4.847 -66.77751" scale="0.042 0.04 0.029" rotation="0 90 0"></a-entity>
                         <a-entity geometry="primitive: torus; radius: 2; radiusTubular: 0.5" material="side: double; color: #9b9b9b" position="39.46476 4.847 -66.77751" scale="0.042 0.04 0.029" rotation="0 180 0"></a-entity>
 
-
             <!--Sala central-->
             <a-assets>
                 <a-asset-item id="salarellena2-obj" src="salarellena2.obj"></a-asset-item>
@@ -646,7 +665,13 @@
             <a-cylinder color="#454545" height="3" radius="1.5" position="2.94271 3.77277 -48.75915" scale="0.64477 2.684 0.66272"></a-cylinder>
             <a-cylinder color="#454545" height="3" radius="1.5" position="-2.00686 3.77277 -48.80581" scale="0.645 2.684 0.663"></a-cylinder>
 
-         <!--Mapas-->
+        <!--Mapas-->
+        <a-assets>
+            <img id="claude" src="assets/images/mapa.jpg">
+        </a-assets>
+        <a-box src="assets/images/mapa.jpg" scale="4.545 5.075 0.25" position="-0.086 3.735 -6.63732" rotation="0 180 0"></a-box>
+        <a-box src="assets/images/mapa.jpg" scale="4.545 5.075 0.25" position="18.085 3.671 -61.600" rotation="0 180 0"></a-box>
+        <a-box src="assets/images/mapa.jpg" scale="4.545 5.075 0.25" position="-21.66436 3.724 -58.63294" rotation="0 180 0"></a-box>
 
        
     </a-scene>
