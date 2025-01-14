@@ -21,16 +21,28 @@
         <!--Componentes del Entorno/Ambiente de la galería-->
         <a-sky atmosphere="color:#f2f7ff"></a-sky>
         <a-entity environment=" preset:goldmine; active: true; seed: 53; skyType:color; skyColor:#EDE9E3; horizonColor: #EDE9E3; lighting: distant; lightPosition: 0 0 0; lightIntensity: 0; fog: 0.43; flatShading: true; playArea: 1.08; ground:flat; groundColor:#CDC6C3;groundTexture:none; groundColor2:#CDC6C3; dressing: none, dressingAmount: 0; shadow: false; scale:13.82663 5.90729 50"></a-entity>
+        
+        <!--Malla de movibilidad-->
+          <a-assets>
+            <a-asset-item id="navmesh" src="assets/blender/malla2.glb"></a-asset-item>
+          </a-assets>
 
-        <!--Movilidad a través del Laberinto (aún no se cuentan con colisiones)-->
-        <a-entity id="rig" movement-controls position="0 0.5 5">
-            <a-entity id="camera"
+         <!--Movilidad a través del Laberinto-->
+           <a-entity id="rig" movement-controls="constrainToNavMesh: true;controls: checkpoint, gamepad, trackpad, keyboard, nipple;" 
+            position="0 0.5 6">
+              <a-entity id="camera"
                       camera
-                      position="0.25 3.6 7"
+                      position="0 3.6 0"
                       look-controls="pointerLockEnabled: true"></a-entity>
             </a-entity>
 
-        <!--Textos de la galería-->
+       <!--Malla-->
+        <a-entity nav-mesh
+        normal-material
+        visible="true"
+        position="3.730 0.040 -34.986" scale="4.600 1.000 4.600"
+        gltf-model="#navmesh"></a-entity>
+         <!--Textos de la galería-->
 
             <!--Títulos de cada entrada-->
             <a-entity 
@@ -134,7 +146,7 @@
                 <!--Frases de los letreros-->
 
 
-        <!--Obras de la galería-->
+         <!--Obras de la galería-->
             <a-assets>
                 <img id="claude" src="assets/images/autores/claude_cahun.jpeg">
                 <img id="damian" src="assets/images/autores/damian_ortega.jpg">
@@ -159,7 +171,7 @@
             <a-box src="assets/images/autores/graciela_iturbide.jpeg" scale="4.000 6.000 0.250" position="18.085 3.671 -61.600" rotation="0 90.000 0"></a-box>
             <a-box src="assets/images/piezas/quince_años.jpeg" scale="4.000 6.000 0.250" position="24.576 3.706 -50.441" rotation="0 0 0"></a-box>
         
-        <!--Estrutura del Laberinto-->
+         <!--Estrutura del Laberinto-->
 
             <!--Paredes-->
                 <!--EXTERNAS-->
@@ -634,8 +646,9 @@
             <a-cylinder color="#454545" height="3" radius="1.5" position="2.94271 3.77277 -48.75915" scale="0.64477 2.684 0.66272"></a-cylinder>
             <a-cylinder color="#454545" height="3" radius="1.5" position="-2.00686 3.77277 -48.80581" scale="0.645 2.684 0.663"></a-cylinder>
 
-        <!--Mapas-->
+         <!--Mapas-->
 
+       
     </a-scene>
 </body>
 </html>
