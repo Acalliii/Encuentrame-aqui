@@ -236,8 +236,8 @@
                 <img id="mascaras" src="assets/images/piezas/Mascaras.jpg">
                 <img id="quince" src="assets/images/piezas/quince_años.jpeg">
                 <img id="1928" src="assets/images/piezas/fotomontaje_claude.png">
-                <img id="1928" src="assets/images/piezas/fotobordado1.jpg">
-                <img id="1928" src="assets/images/piezas/fotobordado2.jpg">
+                <img id="parte1" src="assets/images/piezas/fotobordado1.jpg">
+                <img id="parte2" src="assets/images/piezas/fotobordado2.jpg">
             </a-assets>
             <!--Sala Damian-->
             <a-box src="assets/images/autores/damian_ortega.jpg" scale="2.5 4 0.25" position="-12.31343 3.78527 -8.896" rotation="0 90 0"></a-box>
@@ -776,12 +776,15 @@
                 <a-cylinder color="#454545" height="3" radius="1.5" position="-2.00686 3.77277 -48.80581" scale="0.645 2.684 0.663"></a-cylinder>
 
                 <!--PIEZA COLECTIVA-->
-                <!--a-assets>
-                    <img id="claude" src="assets/images/mapa.jpg">
-                </a-assets-->
-                <a-box static-body="sphereRadius: NaN" position="0.36723 3.61275 -39.24811" rotation="0 -180 0" color="#929393" scale="4.72402 7.409 0.6" velocity=""></a-box>
-                <a-box static-body="sphereRadius: NaN" position="-1.45017 3.61275 -36.08825" rotation="0 116.0497366147726 0" color="#929393" scale="4.72402 7.409 0.6" velocity=""></a-box>
-                <a-box static-body="sphereRadius: NaN" position="2.16247 3.61275 -36.08338" rotation="0 -116.0497366147726 0" color="#929393" scale="4.72402 7.409 0.6" velocity=""></a-box>
+                <!--Parte 1-->
+                <a-box static-body="sphereRadius: NaN" position="0.36723 3.61275 -39.24811" rotation="0 -180 0" src="assets/images/piezas/fotobordado1.jpg" scale="4.72402 7.409 0.6" velocity=""></a-box>
+                <a-box static-body="sphereRadius: NaN" position="-1.45017 3.61275 -36.08825" rotation="0 116.0497366147726 0" src="assets/images/piezas/fotobordado1.jpg" scale="4.72402 7.409 0.6" velocity=""></a-box>
+                <a-box static-body="sphereRadius: NaN" position="2.16247 3.61275 -36.08338" rotation="0 -116.0497366147726 0" src="assets/images/piezas/fotobordado1.jpg" scale="4.72402 7.409 0.6" velocity=""></a-box>
+                <!--Parte dos-->
+                <a-box static-body="sphereRadius: NaN" position="0.36723 3.61275 -39.79078" rotation="0 -180 0" color="#929393" scale="4.72402 7.409 0.6" velocity="" src="assets/images/piezas/fotobordado2.jpg"></a-box>
+                <a-box static-body="sphereRadius: NaN" position="-1.88461 3.613 -35.87093" rotation="0 116.05000000000001 0" color="#929393" scale="4.724 7.409 0.6" velocity="" src="assets/images/piezas/fotobordado2.jpg"></a-box>
+                <a-box static-body="sphereRadius: NaN" position="2.56992 3.61275 -35.89345" rotation="0 -116.0497366147726 0" color="#929393" scale="4.72402 7.409 0.6" velocity="" src="assets/images/piezas/fotobordado2.jpg"></a-box>
+                <!--Esquinas-->
                 <a-cylinder color="#454545" height="3" radius="1.5" position="0.34368 1.00315 -33.48361" scale="0.21 1.15164 0.21"></a-cylinder>
                 <a-cylinder color="#454545" height="3" radius="1.5" position="3.31081 1.00315 -38.95342" scale="0.21 1.15164 0.21"></a-cylinder>
                 <a-cylinder color="#454545" height="3" radius="1.5" position="-2.63296 1.00315 -38.95342" scale="0.21 1.15164 0.21"></a-cylinder>
