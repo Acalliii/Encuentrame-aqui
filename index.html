@@ -23,74 +23,82 @@
         <a-entity environment=" preset:goldmine; active: true; seed: 53; skyType:color; skyColor:#EDE9E3; horizonColor: #EDE9E3; lighting: distant; lightPosition: 0 0 0; lightIntensity: 0; fog: 0.43; flatShading: true; playArea: 1.08; ground:flat; groundColor:#CDC6C3;groundTexture:none; groundColor2:#CDC6C3; dressing: none, dressingAmount: 0; shadow: false; scale:13.82663 5.90729 50"></a-entity>
         
         <!--Malla de movibilidad-->
-          <a-assets>
-            <a-asset-item id="navmesh" src="assets/blender/malla2.glb"></a-asset-item>
-          </a-assets>
+        <a-assets>
+        <a-asset-item id="navmesh" src="assets/blender/malla2.glb"></a-asset-item>
+        </a-assets>
 
-         <!--Movilidad a través del Laberinto-->
-           <a-entity id="rig" movement-controls="constrainToNavMesh: true;controls: checkpoint, gamepad, trackpad, keyboard, nipple;" 
-            position="0 0.5 6">
-              <a-entity id="camera"
-                      camera
-                      position="0 3.6 0"
-                      look-controls="pointerLockEnabled: true"></a-entity>
-            </a-entity>
+        <!--Movilidad a través del Laberinto-->
+        <a-entity id="rig" movement-controls="constrainToNavMesh: true;controls: checkpoint, gamepad, trackpad, keyboard, nipple;" 
+        position="0 0.5 6">
+        <a-entity id="camera"
+            camera
+            position="0 3.6 0"
+            look-controls="pointerLockEnabled: true"></a-entity>
+        </a-entity>
 
-       <!--Malla-->
+        <!--Malla-->
         <a-entity nav-mesh
         normal-material
-        visible="true"
+        visible="false"
         position="3.730 0.040 -34.986" scale="4.600 1.000 4.600"
         gltf-model="#navmesh"></a-entity>
         
          <!--Textos de la galería-->
 
-            <!--Títulos de cada entrada-->
-            <a-entity 
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: E N C U É N T R A M E   A Q U Í" scale="6.495 8.759 2.398" position="0.738 6.82844 3.5793">
-            </a-entity>
-            <a-entity 
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: E N C U É N T R A M E   A Q U Í" scale="8.045 9.746 2.398" position="-29.6885 6.794 -75.656" rotation="0 -180 0">
-            </a-entity>
-            <a-entity
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: E N C U É N T R A M E   A Q U Í" scale="6.495 8.759 2.398" position="39.589 6.84426 -64.61" rotation="0 90 0">
-            </a-entity>
+            <!--Título-->
+
+                <!--Primera entrada-->
+                <a-entity 
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: E N C U É N T R A M E   A Q U Í" scale="6.495 8.759 2.398" position="0.738 6.82844 3.5793">
+                </a-entity>
+
+                <!--Segunda entrada-->
+                <a-entity 
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: E N C U É N T R A M E   A Q U Í" scale="8.045 9.746 2.398" position="-29.6885 6.794 -75.656" rotation="0 -180 0">
+                </a-entity>
+
+                <!--Tercera entrada-->
+                <a-entity
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: E N C U É N T R A M E   A Q U Í" scale="6.495 8.759 2.398" position="39.589 6.84426 -64.61" rotation="0 90 0">
+                </a-entity>
 
             <!--Artistas-->
-            <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: CLAUDE CAHUN" scale="4.29016 4.19011 2" position="-4.04752 1.31682 0.33296" rotation="0 90.9908544869309 0">
-            </a-entity>
-            <a-entity
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: GRACIELA ITURBIDE" scale="4.29016 4.19011 2" position="3.77131 1.31682 2.42378" rotation="0 -88.5557838576249 0">
-            </a-entity>
-            <a-entity 
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: DAMIÁN ORTEGA" scale="4.29016 4.19011 2" position="3.68443 1.31682 -0.19932" rotation="0 -92.3848608024842 0">
-            </a-entity>
-            <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: JUAN PABLO ECHEVERRI" scale="4.29016 4.19011 2" position="-4.01741 1.31682 -2.17238" rotation="0 90.9908544869309 0">
-            </a-entity>
 
-            <!--Segunda entrada-->
-            <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: CLAUDE CAHUN" scale="4.290 4.190 2.000" position="36.136 1.497 -59.580" rotation="0 -180.000 0">
-            </a-entity>
-            <a-entity
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: GRACIELA ITURBIDE" scale="4.290 4.190 2.000" position="38.357 1.497 -68.010" rotation="0 0 0">
-            </a-entity>
-            <a-entity 
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: DAMIÁN ORTEGA" scale="4.290 4.190 2.000" position="35.642 1.497 -68.010" rotation="0 0 0">
-            </a-entity>
-            <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: JUAN PABLO ECHEVERRI" scale="4.290 4.190 2.000" position="33.667 1.497 -59.580" rotation="0 -180.000 0">
-            </a-entity>
+                <!--Primera entrada-->
+                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: CLAUDE CAHUN" scale="4.29016 4.19011 2" position="-4.04752 1.31682 0.33296" rotation="0 90.9908544869309 0">
+                </a-entity>
+                <a-entity
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: GRACIELA ITURBIDE" scale="4.29016 4.19011 2" position="3.77131 1.31682 2.42378" rotation="0 -88.5557838576249 0">
+                </a-entity>
+                <a-entity 
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: DAMIÁN ORTEGA" scale="4.29016 4.19011 2" position="3.68443 1.31682 -0.19932" rotation="0 -92.3848608024842 0">
+                </a-entity>
+                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: JUAN PABLO ECHEVERRI" scale="4.29016 4.19011 2" position="-4.01741 1.31682 -2.17238" rotation="0 90.9908544869309 0">
+                </a-entity>
 
-            <!--Tercera entrada-->
-            <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: CLAUDE CAHUN" scale="4.29016 4.19011 2" position="-24.317 1.337 -72.127" rotation="0 -90.000 0">
-            </a-entity>
-            <a-entity
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: GRACIELA ITURBIDE" scale="4.29016 4.19011 2" position="-32.733 1.337 -74.384" rotation="0 90.000 0">
-            </a-entity>
-            <a-entity 
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: DAMIÁN ORTEGA" scale="4.29016 4.19011 2" position="-32.733 1.337 -71.719" rotation="0 90.000 0">
-            </a-entity>
-            <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: JUAN PABLO ECHEVERRI" scale="4.29016 4.19011 2" position="-24.317 1.337 -69.469" rotation="0 -90.000 0">
-            </a-entity>
+                <!--Segunda entrada-->
+                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: CLAUDE CAHUN" scale="4.290 4.190 2.000" position="36.136 1.497 -59.580" rotation="0 -180.000 0">
+                </a-entity>
+                <a-entity
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: GRACIELA ITURBIDE" scale="4.290 4.190 2.000" position="38.357 1.497 -68.010" rotation="0 0 0">
+                </a-entity>
+                <a-entity 
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: DAMIÁN ORTEGA" scale="4.290 4.190 2.000" position="35.642 1.497 -68.010" rotation="0 0 0">
+                </a-entity>
+                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: JUAN PABLO ECHEVERRI" scale="4.290 4.190 2.000" position="33.667 1.497 -59.580" rotation="0 -180.000 0">
+                </a-entity>
+
+                <!--Tercera entrada-->
+                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: CLAUDE CAHUN" scale="4.29016 4.19011 2" position="-24.317 1.337 -72.127" rotation="0 -90.000 0">
+                </a-entity>
+                <a-entity
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: GRACIELA ITURBIDE" scale="4.29016 4.19011 2" position="-32.733 1.337 -74.384" rotation="0 90.000 0">
+                </a-entity>
+                <a-entity 
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: DAMIÁN ORTEGA" scale="4.29016 4.19011 2" position="-32.733 1.337 -71.719" rotation="0 90.000 0">
+                </a-entity>
+                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: JUAN PABLO ECHEVERRI" scale="4.29016 4.19011 2" position="-24.317 1.337 -69.469" rotation="0 -90.000 0">
+                </a-entity>
 
             <!--Textos Curatoriales-->
 
@@ -160,11 +168,9 @@
                 <img id="mascaras" src="assets/images/piezas/Mascaras.jpg">
                 <img id="quince" src="assets/images/piezas/quince_años.jpeg">
                 <img id="1928" src="assets/images/piezas/fotomontaje_claude.png">
-
             </a-assets>
-            <a-box src="assets/images/autores/damian_ortega.jpg" scale="2.5 4 0.25" position="-12.31343 3.78527 -8.896" rotation="0 90 0"></a-box>
             <!--Sala Damian-->
-            <a-box src="assets/images/autores/damian_ortega.jpg" scale="2.500 4.000 0.150" position="-12.346 3.812 -8.908" rotation="0 90.000 0"></a-box>
+            <a-box src="assets/images/autores/damian_ortega.jpg" scale="2.5 4 0.25" position="-12.31343 3.78527 -8.896" rotation="0 90 0"></a-box>
             <a-box src="assets/images/piezas/Mascaras.jpg" scale="7.000 6.000 0.250" position="-32.512 3.646 -24.402" rotation="0 90.000 0"></a-box>
             <!--Sala Juan-->
             <a-box src="assets/images/autores/juanpa_eche.jpeg" scale="6.000 5.000 0.250" position="32.000 3.613 -19.998" rotation="0 90.000 0"></a-box>
@@ -561,7 +567,8 @@
                 <a-box static-body="sphereRadius: NaN" position="-28.5168 6.73896 -75.258" rotation="0 -180 0" color="#e3aaaa" scale="10.72095 1.7466 0.6" velocity=""></a-box>
                 <a-box static-body="sphereRadius: NaN" position="39.279 6.772 -63.79699" rotation="0 -90 0" color="#e3aaaa" scale="10.60191 1.646 0.6" velocity=""></a-box>
 
-                <!--SALAS-->
+                <!--Frases debajo de las máscaras en cada sala-->
+
                     <!--DAMIÁN ORTEGA-->
 
                     <!--JUAN PABLO ECHEVERRI-->
@@ -627,7 +634,6 @@
                         <a-entity geometry="primitive: torus; radius: 2; radiusTubular: 0.5" material="side: double; color: #9b9b9b" position="2.29174 5.56204 3.357" scale="0.042 0.04 0.029" rotation="0 90 0"></a-entity>
                         <a-entity geometry="primitive: torus; radius: 2; radiusTubular: 0.5" material="side: double; color: #9b9b9b" position="2.29282 5.40063 3.357" scale="0.042 0.04 0.029" rotation="0 180 0"></a-entity>
 
-
                     <!--Entrada trasera-->
                     <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-25.58882 4.847 -75.42979" rotation="" scale="0.698 0.632 0.670"></a-entity>
                         <!--Cadena-->
@@ -651,27 +657,42 @@
                         <a-entity geometry="primitive: torus; radius: 2; radiusTubular: 0.5" material="side: double; color: #9b9b9b" position="39.46476 4.847 -66.77751" scale="0.042 0.04 0.029" rotation="0 180 0"></a-entity>
 
             <!--Sala central-->
-            <a-assets>
-                <a-asset-item id="salarellena2-obj" src="salarellena2.obj"></a-asset-item>
-                <a-asset-item id="salarellena2-mtl" src="salarellena2.mtl"></a-asset-item>
-            </a-assets>
-            <a-entity 
-            obj-model="mtl: assets/blender/salarellena2.mtl; obj: assets/blender/salarellena2.obj" position="-1.651 -2.048 -34.67592" visible="" scale="1.867 1.464 1.925" rotation="0 -0.525 0">
-            </a-entity>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="-8.36917 3.77277 -27.88212" scale="0.645 2.684 0.663"></a-cylinder>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="-11.52536 3.77277 -34.12096" scale="0.64477 2.684 0.66272"></a-cylinder>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="12.25482 3.77277 -34.15853" scale="0.64477 2.684 0.66272"></a-cylinder>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="8.94885 3.77277 -27.74274" scale="0.64477 2.684 0.66272"></a-cylinder>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="2.94271 3.77277 -48.75915" scale="0.64477 2.684 0.66272"></a-cylinder>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="-2.00686 3.77277 -48.80581" scale="0.645 2.684 0.663"></a-cylinder>
+
+                <!--Estructura-->
+                <a-assets>
+                    <a-asset-item id="salarellena2-obj" src="salarellena2.obj"></a-asset-item>
+                    <a-asset-item id="salarellena2-mtl" src="salarellena2.mtl"></a-asset-item>
+                </a-assets>
+                <a-entity 
+                obj-model="mtl: assets/blender/salarellena2.mtl; obj: assets/blender/salarellena2.obj" position="-1.651 -2.048 -34.67592" visible="" scale="1.867 1.464 1.925" rotation="0 -0.525 0">
+                </a-entity>
+                <a-cylinder color="#454545" height="3" radius="1.5" position="-8.36917 3.77277 -27.88212" scale="0.645 2.684 0.663"></a-cylinder>
+                <a-cylinder color="#454545" height="3" radius="1.5" position="-11.52536 3.77277 -34.12096" scale="0.64477 2.684 0.66272"></a-cylinder>
+                <a-cylinder color="#454545" height="3" radius="1.5" position="12.25482 3.77277 -34.15853" scale="0.64477 2.684 0.66272"></a-cylinder>
+                <a-cylinder color="#454545" height="3" radius="1.5" position="8.94885 3.77277 -27.74274" scale="0.64477 2.684 0.66272"></a-cylinder>
+                <a-cylinder color="#454545" height="3" radius="1.5" position="2.94271 3.77277 -48.75915" scale="0.64477 2.684 0.66272"></a-cylinder>
+                <a-cylinder color="#454545" height="3" radius="1.5" position="-2.00686 3.77277 -48.80581" scale="0.645 2.684 0.663"></a-cylinder>
+
+                <!--PIEZA COLECTIVA-->
+                <!--a-assets>
+                    <img id="claude" src="assets/images/mapa.jpg">
+                </a-assets-->
+                <a-box static-body="sphereRadius: NaN" position="0.36723 3.61275 -39.24811" rotation="0 -180 0" color="#929393" scale="4.72402 7.409 0.6" velocity=""></a-box>
+                <a-box static-body="sphereRadius: NaN" position="-1.45017 3.61275 -36.08825" rotation="0 116.0497366147726 0" color="#929393" scale="4.72402 7.409 0.6" velocity=""></a-box>
+                <a-box static-body="sphereRadius: NaN" position="2.16247 3.61275 -36.08338" rotation="0 -116.0497366147726 0" color="#929393" scale="4.72402 7.409 0.6" velocity=""></a-box>
+
+                    <!--Ficha-->
+                    <a-cylinder color="#454545" height="3" radius="1.5" position="0.34368 1.00315 -33.48361" scale="0.21 1.15164 0.21"></a-cylinder>
+                    <a-cylinder color="#454545" height="3" radius="1.5" position="3.31081 1.00315 -38.95342" scale="0.21 1.15164 0.21"></a-cylinder>
+                    <a-cylinder color="#454545" height="3" radius="1.5" position="-2.63296 1.00315 -38.95342" scale="0.21 1.15164 0.21"></a-cylinder>
 
         <!--Mapas-->
         <a-assets>
             <img id="claude" src="assets/images/mapa.jpg">
         </a-assets>
         <a-box src="assets/images/mapa.jpg" scale="4.545 5.075 0.25" position="-0.086 3.735 -6.63732" rotation="0 180 0"></a-box>
-        <a-box src="assets/images/mapa.jpg" scale="4.545 5.075 0.25" position="18.085 3.671 -61.600" rotation="0 180 0"></a-box>
-        <a-box src="assets/images/mapa.jpg" scale="4.545 5.075 0.25" position="-21.66436 3.724 -58.63294" rotation="0 180 0"></a-box>
+        <a-box src="assets/images/mapa.jpg" scale="4.545 5.075 0.25" position="27.57019 3.671 -67.97385" rotation="0 180 0"></a-box>
+        <a-box src="assets/images/mapa.jpg" scale="4.545 5.075 0.25" position="-28.54597 3.724 -63.80752" rotation="0 180 0"></a-box>
 
        
     </a-scene>
