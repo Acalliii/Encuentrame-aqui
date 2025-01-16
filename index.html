@@ -23,20 +23,20 @@
         <a-entity environment=" preset:goldmine; active: true; seed: 53; skyType:color; skyColor:#EDE9E3; horizonColor: #EDE9E3; lighting: distant; lightPosition: 0 0 0; lightIntensity: 0; fog: 0.43; flatShading: true; playArea: 1.08; ground:flat; groundColor:#CDC6C3;groundTexture:none; groundColor2:#CDC6C3; dressing: none, dressingAmount: 0; shadow: false; scale:13.82663 5.90729 50"></a-entity>
         
         <!--Malla de movibilidad-->
-          <a-assets>
-            <a-asset-item id="navmesh" src="assets/blender/malla2.glb"></a-asset-item>
-          </a-assets>
+        <a-assets>
+        <a-asset-item id="navmesh" src="assets/blender/malla2.glb"></a-asset-item>
+        </a-assets>
 
-         <!--Movilidad a través del Laberinto-->
-           <a-entity id="rig" movement-controls="constrainToNavMesh: true;controls: checkpoint, gamepad, trackpad, keyboard, nipple;" 
-            position="0 0.5 6">
-              <a-entity id="camera"
-                      camera
-                      position="0 3.6 0"
-                      look-controls="pointerLockEnabled: true"></a-entity>
-            </a-entity>
+        <!--Movilidad a través del Laberinto-->
+        <a-entity id="rig" movement-controls="constrainToNavMesh: true;controls: checkpoint, gamepad, trackpad, keyboard, nipple;" 
+        position="0 0.5 6">
+        <a-entity id="camera"
+            camera
+            position="0 3.6 0"
+            look-controls="pointerLockEnabled: true"></a-entity>
+        </a-entity>
 
-       <!--Malla-->
+        <!--Malla-->
         <a-entity nav-mesh
         normal-material
         visible="false"
@@ -45,90 +45,102 @@
         
          <!--Textos de la galería-->
 
-            <!--Títulos de cada entrada-->
-            <a-entity 
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: E N C U É N T R A M E   A Q U Í" scale="6.495 8.759 2.398" position="0.738 6.82844 3.5793">
-            </a-entity>
-            <a-entity 
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: E N C U É N T R A M E   A Q U Í" scale="8.045 9.746 2.398" position="-29.6885 6.794 -75.656" rotation="0 -180 0">
-            </a-entity>
-            <a-entity
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: E N C U É N T R A M E   A Q U Í" scale="6.495 8.759 2.398" position="39.589 6.84426 -64.61" rotation="0 90 0">
-            </a-entity>
+            <!--Título-->
+
+                <!--Primera entrada-->
+                <a-entity 
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: E N C U É N T R A M E   A Q U Í" scale="6.495 8.759 2.398" position="0.738 6.82844 3.5793">
+                </a-entity>
+
+                <!--Segunda entrada-->
+                <a-entity 
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: E N C U É N T R A M E   A Q U Í" scale="8.045 9.746 2.398" position="-29.6885 6.794 -75.656" rotation="0 -180 0">
+                </a-entity>
+
+                <!--Tercera entrada-->
+                <a-entity
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: E N C U É N T R A M E   A Q U Í" scale="6.495 8.759 2.398" position="39.589 6.84426 -64.61" rotation="0 90 0">
+                </a-entity>
 
             <!--Artistas-->
-            <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: CLAUDE CAHUN" scale="4.29016 4.19011 2" position="-4.04752 1.31682 0.33296" rotation="0 90.9908544869309 0">
-            </a-entity>
-            <a-entity
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: GRACIELA ITURBIDE" scale="4.29016 4.19011 2" position="3.77131 1.31682 2.42378" rotation="0 -88.5557838576249 0">
-            </a-entity>
-            <a-entity 
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: DAMIÁN ORTEGA" scale="4.29016 4.19011 2" position="3.68443 1.31682 -0.19932" rotation="0 -92.3848608024842 0">
-            </a-entity>
-            <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: JUAN PABLO ECHEVERRI" scale="4.29016 4.19011 2" position="-4.01741 1.31682 -2.17238" rotation="0 90.9908544869309 0">
-            </a-entity>
 
-            <!--Segunda entrada-->
-            <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: CLAUDE CAHUN" scale="4.290 4.190 2.000" position="36.136 1.497 -59.580" rotation="0 -180.000 0">
-            </a-entity>
-            <a-entity
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: GRACIELA ITURBIDE" scale="4.290 4.190 2.000" position="38.357 1.497 -68.010" rotation="0 0 0">
-            </a-entity>
-            <a-entity 
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: DAMIÁN ORTEGA" scale="4.290 4.190 2.000" position="35.642 1.497 -68.010" rotation="0 0 0">
-            </a-entity>
-            <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: JUAN PABLO ECHEVERRI" scale="4.290 4.190 2.000" position="33.667 1.497 -59.580" rotation="0 -180.000 0">
-            </a-entity>
+                <!--Primera entrada-->
+                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: CLAUDE CAHUN" scale="4.29016 4.19011 2" position="-4.04752 1.31682 0.33296" rotation="0 90.9908544869309 0">
+                </a-entity>
+                <a-entity
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: GRACIELA ITURBIDE" scale="4.29016 4.19011 2" position="3.77131 1.31682 2.42378" rotation="0 -88.5557838576249 0">
+                </a-entity>
+                <a-entity 
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: DAMIÁN ORTEGA" scale="4.29016 4.19011 2" position="3.68443 1.31682 -0.19932" rotation="0 -92.3848608024842 0">
+                </a-entity>
+                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: JUAN PABLO ECHEVERRI" scale="4.29016 4.19011 2" position="-4.01741 1.31682 -2.17238" rotation="0 90.9908544869309 0">
+                </a-entity>
 
-            <!--Tercera entrada-->
-            <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: CLAUDE CAHUN" scale="4.29016 4.19011 2" position="-24.317 1.337 -72.127" rotation="0 -90.000 0">
-            </a-entity>
-            <a-entity
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: GRACIELA ITURBIDE" scale="4.29016 4.19011 2" position="-32.733 1.337 -74.384" rotation="0 90.000 0">
-            </a-entity>
-            <a-entity 
-            text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: DAMIÁN ORTEGA" scale="4.29016 4.19011 2" position="-32.733 1.337 -71.719" rotation="0 90.000 0">
-            </a-entity>
-            <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: JUAN PABLO ECHEVERRI" scale="4.29016 4.19011 2" position="-24.317 1.337 -69.469" rotation="0 -90.000 0">
-            </a-entity>
+                <!--Segunda entrada-->
+                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: CLAUDE CAHUN" scale="4.290 4.190 2.000" position="36.136 1.497 -59.580" rotation="0 -180.000 0">
+                </a-entity>
+                <a-entity
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: GRACIELA ITURBIDE" scale="4.290 4.190 2.000" position="38.357 1.497 -68.010" rotation="0 0 0">
+                </a-entity>
+                <a-entity 
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: DAMIÁN ORTEGA" scale="4.290 4.190 2.000" position="35.642 1.497 -68.010" rotation="0 0 0">
+                </a-entity>
+                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: JUAN PABLO ECHEVERRI" scale="4.290 4.190 2.000" position="33.667 1.497 -59.580" rotation="0 -180.000 0">
+                </a-entity>
+
+                <!--Tercera entrada-->
+                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: CLAUDE CAHUN" scale="4.29016 4.19011 2" position="-24.317 1.337 -72.127" rotation="0 -90.000 0">
+                </a-entity>
+                <a-entity
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: GRACIELA ITURBIDE" scale="4.29016 4.19011 2" position="-32.733 1.337 -74.384" rotation="0 90.000 0">
+                </a-entity>
+                <a-entity 
+                text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: DAMIÁN ORTEGA" scale="4.29016 4.19011 2" position="-32.733 1.337 -71.719" rotation="0 90.000 0">
+                </a-entity>
+                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: JUAN PABLO ECHEVERRI" scale="4.29016 4.19011 2" position="-24.317 1.337 -69.469" rotation="0 -90.000 0">
+                </a-entity>
 
             <!--Textos Curatoriales-->
 
                 <!--General de la Galería-->
-                <!--Entrada principal-->
-                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 3; negate: false; value: ¿Quién eres? Pero no respondas con tu nombre ni te centres sólo en tus gustos e intereses, tampoco en lo que te dedicas. No se está preguntando eso. La respuesta que se busca está relacionada con qué es lo que te define, lo que te hace ser tú. Encuentra en ti todos esos pensamientos, preferencias, pronombres, vestimentas, lugares, sentimientos, relaciones y recuerdos que te conforman y te han marcado, dando lugar a tu origen, a ti. Esa es tu identidad. Esa es la identidad" scale="5.332 5.663 3" position="-18.018 3.690 -6.678">
-                </a-entity>
-                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: Así surge ENCUÉNTRAME AQUÍ, un espacio donde se presenta a la identidad como algo no escrito, ni siquiera definitivo, sino como una construcción en constante movimiento, que si bien puede perderse, o ni siquiera haberse pensado, puede encontrarse. Este espacio se encuentra formado por un laberinto minimalista, frío y con cierto toque de tranquilidad. En él, todos los caminos que nos llevan a encontrar nuestra identidad se hacen presentes, aún si están cerrados o nos deja estancados" scale="4.712 5.753 3" position="-7.787 3.690 -6.678">
-                </a-entity>
-                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: En ella se expone el tema del autoconocimiento en relación con el cuerpo, la memoria y el género, lo que se expresa mediante los artistas: Claude Cahun, Graciela Iturbide, Damián Ortega y Juan Pablo Echeverri. Nuestra intención y objetivo es que con este camino, estas obras y estos artistas, se vea la identidad como una búsqueda constante de uno mismo, manifestada en expresiones corporales y extracorpóreas, algo que está constantemente en cambio dependiendo nuestro círculo, contexto e intención" scale="5.33196 5.66266 3" position="7.787 3.690 -6.678">
-                </a-entity>
-                <!--Entrada lateral-->
-                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 3; negate: false; value: ¿Quién eres? Pero no respondas con tu nombre ni te centres sólo en tus gustos e intereses, tampoco en lo que te dedicas. No se está preguntando eso. La respuesta que se busca está relacionada con qué es lo que te define, lo que te hace ser tú. Encuentra en ti todos esos pensamientos, preferencias, pronombres, vestimentas, lugares, sentimientos, relaciones y recuerdos que te conforman y te han marcado, dando lugar a tu origen, a ti. Esa es tu identidad. Esa es la identidad" scale="4.182 5.663 3" position="25.428 3.690 -63.478">
-                </a-entity>
-                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: Así surge ENCUÉNTRAME AQUÍ, un espacio donde se presenta a la identidad como algo no escrito, ni siquiera definitivo, sino como una construcción en constante movimiento, que si bien puede perderse, o ni siquiera haberse pensado, puede encontrarse. Este espacio se encuentra formado por un laberinto minimalista, frío y con cierto toque de tranquilidad. En él, todos los caminos que nos llevan a encontrar nuestra identidad se hacen presentes, aún si están cerrados o nos deja estancados" scale="4.712 5.753 3" position="28.259 3.690 -51.601" rotation="0 90 0">
-                </a-entity>
-                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: En ella se expone el tema del autoconocimiento en relación con el cuerpo, la memoria y el género, lo que se expresa mediante los artistas: Claude Cahun, Graciela Iturbide, Damián Ortega y Juan Pablo Echeverri. Nuestra intención y objetivo es que con este camino, estas obras y estos artistas, se vea la identidad como una búsqueda constante de uno mismo, manifestada en expresiones corporales y extracorpóreas, algo que está constantemente en cambio dependiendo nuestro círculo, contexto e intención" scale="5.33196 5.66266 3" position="28.259 3.690 -45.198" rotation="0 90 0">
-                </a-entity>
-                <!--Entrada trasera-->
-                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 3; negate: false; value: ¿Quién eres? Pero no respondas con tu nombre ni te centres sólo en tus gustos e intereses, tampoco en lo que te dedicas. No se está preguntando eso. La respuesta que se busca está relacionada con qué es lo que te define, lo que te hace ser tú. Encuentra en ti todos esos pensamientos, preferencias, pronombres, vestimentas, lugares, sentimientos, relaciones y recuerdos que te conforman y te han marcado, dando lugar a tu origen, a ti. Esa es tu identidad. Esa es la identidad" scale="5.332 5.663 3" position="-15.544 3.690 -67.923">
-                </a-entity>
-                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: Así surge ENCUÉNTRAME AQUÍ, un espacio donde se presenta a la identidad como algo no escrito, ni siquiera definitivo, sino como una construcción en constante movimiento, que si bien puede perderse, o ni siquiera haberse pensado, puede encontrarse. Este espacio se encuentra formado por un laberinto minimalista, frío y con cierto toque de tranquilidad. En él, todos los caminos que nos llevan a encontrar nuestra identidad se hacen presentes, aún si están cerrados o nos deja estancados" scale="4.712 5.753 3" position="-3.598 3.690 -60.399"rotation="0 -90 0">
-                </a-entity>
-                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: En ella se expone el tema del autoconocimiento en relación con el cuerpo, la memoria y el género, lo que se expresa mediante los artistas: Claude Cahun, Graciela Iturbide, Damián Ortega y Juan Pablo Echeverri. Nuestra intención y objetivo es que con este camino, estas obras y estos artistas, se vea la identidad como una búsqueda constante de uno mismo, manifestada en expresiones corporales y extracorpóreas, algo que está constantemente en cambio dependiendo nuestro círculo, contexto e intención" scale="4.352 5.66266 3" position="-7.988 3.690 -56.164" rotation="0 -90 0">
-                </a-entity>
-                <!--Textos de las salas-->
-                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: En esta sala se encuentra la obra de Máscaras de Damián Ortega, en donde se aborda el concepto de la identidad bajo el tema del cuerpo, esta obra nos hace ver lo excluidxs que somos ya sea por tu vestimenta, tu cabello, tu rostro o tu cuerpo en general." scale="5.332 5.663 3" position="-28.080 3.500 -9.592" rotation="0 90.000 0">
-                </a-entity>
-                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: En esta sala se encuentra la obra de Juan Pablo Echeverri FuturoSExtraños, en la que abordamos la identidad con un criterio de cómo es la forma en la que nos presentamos ante otras personas, el cómo podemos cambiar solo por aparentar." scale="6.500 6.000 3" position="24.392 4.398 -7.310" rotation="0 -180.000 0">
-                </a-entity>
-                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: En esta sala se encuentra la fotografía Quince años de Graciela Iturbide, en dónde vemos a una Muxe, representando la cultura de una región y las personas que nacen como hombres pero se identifican como mujeres." scale="4.000 8.000 5.000" position="23.991 4.143 -41.979" rotation="0 90.000 0">
-                </a-entity>
-                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: En esta sala se encuentra la obra de Confesiones Inconfesas, donde Claude Cahun interpreta a la identidad como una máscara que puede ponerse y quitarse cuando se desee; algo no escrito, ni siquiera definitivo, sino una construcción en constante mutación." scale="5.332 6.000 3" position="-20.078 4.150 -59.406" rotation="0 -180.000 0">
-                </a-entity>
-                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: Creamos el colectivo con la finalidad de presentar la identidad como algo que no es lineal, algo cambiante, mostrando la identidad de distintas formas ayudando y brindando apoyo a todas las personas que se sientan solos en este camino inconstante de la identidad." scale="5.680 8.490 3.000" position="-4.593 4.108 -46.073" rotation="0 31.110 0">
-                </a-entity>
-                <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: Entrelazadas es un foto bordado, que se muestra como una metáfora de cómo la identidad, aunque es una búsqueda personal, siempre termina siendo algo colectivo. Los elementos que componen la identidad de una persona son, en su mayoría, fragmentos tomados de cada vínculo afectivo, lugar, contexto y cultura que ha experimentado. Así, la identidad se va construyendo a partir de esas piezas, que pueden conectarse con otras identidades." scale="7.900 7.400 3.000" position="0 3.926 -25.908" rotation="0 -180.000 0">
-                </a-entity>
+
+                    <!--Entrada principal-->
+                    <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 3; negate: false; value: ¿Quién eres? Pero no respondas con tu nombre ni te centres sólo en tus gustos e intereses, tampoco en lo que te dedicas. No se está preguntando eso. La respuesta que se busca está relacionada con qué es lo que te define, lo que te hace ser tú. Encuentra en ti todos esos pensamientos, preferencias, pronombres, vestimentas, lugares, sentimientos, relaciones y recuerdos que te conforman y te han marcado, dando lugar a tu origen, a ti. Esa es tu identidad. Esa es la identidad" scale="5.332 5.663 3" position="-18.018 3.690 -6.678">
+                    </a-entity>
+                    <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: Así surge ENCUÉNTRAME AQUÍ, un espacio donde se presenta a la identidad como algo no escrito, ni siquiera definitivo, sino como una construcción en constante movimiento, que si bien puede perderse, o ni siquiera haberse pensado, puede encontrarse. Este espacio se encuentra formado por un laberinto minimalista, frío y con cierto toque de tranquilidad. En él, todos los caminos que nos llevan a encontrar nuestra identidad se hacen presentes, aún si están cerrados o nos deja estancados" scale="4.712 5.753 3" position="-7.787 3.690 -6.678">
+                    </a-entity>
+                    <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: En ella se expone el tema del autoconocimiento en relación con el cuerpo, la memoria y el género, lo que se expresa mediante los artistas: Claude Cahun, Graciela Iturbide, Damián Ortega y Juan Pablo Echeverri. Nuestra intención y objetivo es que con este camino, estas obras y estos artistas, se vea la identidad como una búsqueda constante de uno mismo, manifestada en expresiones corporales y extracorpóreas, algo que está constantemente en cambio dependiendo nuestro círculo, contexto e intención" scale="5.33196 5.66266 3" position="7.787 3.690 -6.678">
+                    </a-entity>
+
+                    <!--Entrada lateral-->
+                    <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 3; negate: false; value: ¿Quién eres? Pero no respondas con tu nombre ni te centres sólo en tus gustos e intereses, tampoco en lo que te dedicas. No se está preguntando eso. La respuesta que se busca está relacionada con qué es lo que te define, lo que te hace ser tú. Encuentra en ti todos esos pensamientos, preferencias, pronombres, vestimentas, lugares, sentimientos, relaciones y recuerdos que te conforman y te han marcado, dando lugar a tu origen, a ti. Esa es tu identidad. Esa es la identidad" scale="4.182 5.663 3" position="25.428 3.690 -63.478">
+                    </a-entity>
+                    <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: Así surge ENCUÉNTRAME AQUÍ, un espacio donde se presenta a la identidad como algo no escrito, ni siquiera definitivo, sino como una construcción en constante movimiento, que si bien puede perderse, o ni siquiera haberse pensado, puede encontrarse. Este espacio se encuentra formado por un laberinto minimalista, frío y con cierto toque de tranquilidad. En él, todos los caminos que nos llevan a encontrar nuestra identidad se hacen presentes, aún si están cerrados o nos deja estancados" scale="4.712 5.753 3" position="28.259 3.690 -51.601" rotation="0 90 0">
+                    </a-entity>
+                    <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: En ella se expone el tema del autoconocimiento en relación con el cuerpo, la memoria y el género, lo que se expresa mediante los artistas: Claude Cahun, Graciela Iturbide, Damián Ortega y Juan Pablo Echeverri. Nuestra intención y objetivo es que con este camino, estas obras y estos artistas, se vea la identidad como una búsqueda constante de uno mismo, manifestada en expresiones corporales y extracorpóreas, algo que está constantemente en cambio dependiendo nuestro círculo, contexto e intención" scale="5.33196 5.66266 3" position="28.259 3.690 -45.198" rotation="0 90 0">
+                    </a-entity>
+
+                    <!--Entrada trasera-->
+                    <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 3; negate: false; value: ¿Quién eres? Pero no respondas con tu nombre ni te centres sólo en tus gustos e intereses, tampoco en lo que te dedicas. No se está preguntando eso. La respuesta que se busca está relacionada con qué es lo que te define, lo que te hace ser tú. Encuentra en ti todos esos pensamientos, preferencias, pronombres, vestimentas, lugares, sentimientos, relaciones y recuerdos que te conforman y te han marcado, dando lugar a tu origen, a ti. Esa es tu identidad. Esa es la identidad" scale="5.332 5.663 3" position="-15.544 3.690 -67.923">
+                    </a-entity>
+                    <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: Así surge ENCUÉNTRAME AQUÍ, un espacio donde se presenta a la identidad como algo no escrito, ni siquiera definitivo, sino como una construcción en constante movimiento, que si bien puede perderse, o ni siquiera haberse pensado, puede encontrarse. Este espacio se encuentra formado por un laberinto minimalista, frío y con cierto toque de tranquilidad. En él, todos los caminos que nos llevan a encontrar nuestra identidad se hacen presentes, aún si están cerrados o nos deja estancados" scale="4.712 5.753 3" position="-3.598 3.690 -60.399"rotation="0 -90 0">
+                    </a-entity>
+                    <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: En ella se expone el tema del autoconocimiento en relación con el cuerpo, la memoria y el género, lo que se expresa mediante los artistas: Claude Cahun, Graciela Iturbide, Damián Ortega y Juan Pablo Echeverri. Nuestra intención y objetivo es que con este camino, estas obras y estos artistas, se vea la identidad como una búsqueda constante de uno mismo, manifestada en expresiones corporales y extracorpóreas, algo que está constantemente en cambio dependiendo nuestro círculo, contexto e intención" scale="4.352 5.66266 3" position="-7.988 3.690 -56.164" rotation="0 -90 0">
+                    </a-entity>
+
+                    <!--Textos de las salas-->
+                    <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: En esta sala se encuentra la obra de Máscaras de Damián Ortega, en donde se aborda el concepto de la identidad bajo el tema del cuerpo, esta obra nos hace ver lo excluidxs que somos ya sea por tu vestimenta, tu cabello, tu rostro o tu cuerpo en general." scale="5.332 5.663 3" position="-28.080 3.500 -9.592" rotation="0 90.000 0">
+                    </a-entity>
+                    <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: En esta sala se encuentra la obra de Juan Pablo Echeverri FuturoSExtraños, en la que abordamos la identidad con un criterio de cómo es la forma en la que nos presentamos ante otras personas, el cómo podemos cambiar solo por aparentar." scale="6.500 6.000 3" position="24.392 4.398 -7.310" rotation="0 -180.000 0">
+                    </a-entity>
+                    <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: En esta sala se encuentra la fotografía Quince años de Graciela Iturbide, en dónde vemos a una Muxe, representando la cultura de una región y las personas que nacen como hombres pero se identifican como mujeres." scale="4.000 8.000 5.000" position="23.991 4.143 -41.979" rotation="0 90.000 0">
+                    </a-entity>
+                    <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: En esta sala se encuentra la obra de Confesiones Inconfesas, donde Claude Cahun interpreta a la identidad como una máscara que puede ponerse y quitarse cuando se desee; algo no escrito, ni siquiera definitivo, sino una construcción en constante mutación." scale="5.332 6.000 3" position="-20.078 4.150 -59.406" rotation="0 -180.000 0">
+                    </a-entity>
+                    <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: Creamos el colectivo con la finalidad de presentar la identidad como algo que no es lineal, algo cambiante, mostrando la identidad de distintas formas ayudando y brindando apoyo a todas las personas que se sientan solos en este camino inconstante de la identidad." scale="5.680 8.490 3.000" position="-4.593 4.108 -46.073" rotation="0 31.110 0">
+                    </a-entity>
+                    <a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: Entrelazadas es un foto bordado, que se muestra como una metáfora de cómo la identidad, aunque es una búsqueda personal, siempre termina siendo algo colectivo. Los elementos que componen la identidad de una persona son, en su mayoría, fragmentos tomados de cada vínculo afectivo, lugar, contexto y cultura que ha experimentado. Así, la identidad se va construyendo a partir de esas piezas, que pueden conectarse con otras identidades." scale="7.900 7.400 3.000" position="0 3.926 -25.908" rotation="0 -180.000 0">
+                    </a-entity>
 
 
                 <!--Biografías de los artistas-->
@@ -170,6 +182,8 @@
                 </a-entity>
 
                 <!--Frases de los letreros-->
+                <!--a-entity text="color: black; font: assets/fonts/abcorregido-msdf/abcorregido-msdf.json; fontImage: assets/fonts/abcorregido-msdf/abcorregido.png; letterSpacing: 4; negate: false; value: Juan Pablo Echeverrí. FuturoSEXtraños. 2016. Impresiones inkjet, marcos de madera. 41.9 x 41.9 cm." scale="4.082 7.403 3.000" position="11.466 4.264 -7.313" rotation="0 -180.000 0">
+                </a-entity-->
 
 
          <!--Obras de la galería-->
@@ -183,11 +197,9 @@
                 <img id="mascaras" src="assets/images/piezas/Mascaras.jpg">
                 <img id="quince" src="assets/images/piezas/quince_años.jpeg">
                 <img id="1928" src="assets/images/piezas/fotomontaje_claude.png">
-
             </a-assets>
-            <a-box src="assets/images/autores/damian_ortega.jpg" scale="2.5 4 0.25" position="-12.31343 3.78527 -8.896" rotation="0 90 0"></a-box>
             <!--Sala Damian-->
-            <a-box src="assets/images/autores/damian_ortega.jpg" scale="2.500 4.000 0.150" position="-12.346 3.812 -8.908" rotation="0 90.000 0"></a-box>
+            <a-box src="assets/images/autores/damian_ortega.jpg" scale="2.5 4 0.25" position="-12.31343 3.78527 -8.896" rotation="0 90 0"></a-box>
             <a-box src="assets/images/piezas/Mascaras.jpg" scale="7.000 6.000 0.250" position="-32.512 3.646 -24.402" rotation="0 90.000 0"></a-box>
             <!--Sala Juan-->
             <a-box src="assets/images/autores/juanpa_eche.jpeg" scale="6.000 5.000 0.250" position="32.000 3.613 -19.998" rotation="0 90.000 0"></a-box>
@@ -584,14 +596,30 @@
                 <a-box static-body="sphereRadius: NaN" position="-28.5168 6.73896 -75.258" rotation="0 -180 0" color="#e3aaaa" scale="10.72095 1.7466 0.6" velocity=""></a-box>
                 <a-box static-body="sphereRadius: NaN" position="39.279 6.772 -63.79699" rotation="0 -90 0" color="#e3aaaa" scale="10.60191 1.646 0.6" velocity=""></a-box>
 
-                <!--SALAS-->
+                <!--Frases debajo de las máscaras en cada sala-->
+
                     <!--DAMIÁN ORTEGA-->
+                    <a-box static-body="sphereRadius: NaN" position="-28.00875 3.15074 -27.94004" rotation="0 -90 0" color="#e3aaaa" scale="2.36067 2.322 0.221" velocity=""></a-box>
+                    <a-box static-body="sphereRadius: NaN" position="-11.70649 3.10561 -8.91567" rotation="0 -90 0" color="#e3aaaa" scale="2.45925 2.322 0.221" velocity=""></a-box>
+                    <a-box static-body="sphereRadius: NaN" position="-23.47703 3.08327 -12.68985" rotation="0 -90 0" color="#e3aaaa" scale="2.27874 2.322 0.221" velocity=""></a-box>
+                    <a-box static-body="sphereRadius: NaN" position="-9.94257 2.97962 -20.60449" rotation="0 -180 0" color="#e3aaaa" scale="2.566 2.322 0.221" velocity=""></a-box>
+                    <a-box static-body="sphereRadius: NaN" position="-18.233 2.95821 -20.26338" rotation="0 -90 0" color="#e3aaaa" scale="2.566 2.322 0.221" velocity=""></a-box>
 
                     <!--JUAN PABLO ECHEVERRI-->
+                    <a-box static-body="sphereRadius: NaN" position="2.764 2.97962 -18.20898" rotation="0 -180 0" color="#e3aaaa" scale="2.566 2.322 0.221" velocity=""></a-box>
+                    <a-box static-body="sphereRadius: NaN" position="19.47489 3.0786 -33.77897" rotation="0 -180 0" color="#e3aaaa" scale="2.566 2.322 0.221" velocity=""></a-box>
+                    <a-box static-body="sphereRadius: NaN" position="17.07963 2.86727 -11.04542" rotation="0 -180 0" color="#e3aaaa" scale="2.566 2.322 0.221" velocity=""></a-box>
+                    <a-box static-body="sphereRadius: NaN" position="14.15742 2.99306 -23.48277" rotation="0 -90 0" color="#e3aaaa" scale="2.566 2.322 0.221" velocity=""></a-box>
+                    <a-box static-body="sphereRadius: NaN" position="19.2072 2.80622 -19.30026" rotation="0 -90 0" color="#e3aaaa" scale="2.566 2.322 0.221" velocity=""></a-box>
 
                     <!--CLAUDE CAHUN-->
 
                     <!--GRACIELA ITURBIDE-->
+                    <a-box static-body="sphereRadius: NaN" position="21.66834 2.98528 -46.3776" rotation="0 -180 0" color="#e3aaaa" scale="2.566 2.322 0.221" velocity=""></a-box>
+                    <a-box static-body="sphereRadius: NaN" position="27.65896 2.99306 -52.94691" rotation="0 -90 0" color="#e3aaaa" scale="2.566 2.322 0.221" velocity=""></a-box>
+                    <a-box static-body="sphereRadius: NaN" position="5.25677 2.99306 -66.17101" rotation="0 -90 0" color="#e3aaaa" scale="2.566 2.322 0.221" velocity=""></a-box>
+                    <a-box static-body="sphereRadius: NaN" position="12.098 2.9502 -42.546" rotation="0 117.101 0" color="#e3aaaa" scale="2.566 2.322 0.221" velocity=""></a-box>
+                    <a-box static-body="sphereRadius: NaN" position="8.03091 3.01217 -59.3774" rotation="0 -180 0" color="#e3aaaa" scale="2.566 2.322 0.221" velocity=""></a-box>
 
             
             <!--Máscaras-->
@@ -601,21 +629,22 @@
                 </a-assets>
 
                 <!--Dentro del laberinto-->
+
                     <!--DAMIÁN ORTEGA-->
                     <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-32.67585 4.56935 -5.29232" rotation="0 -91.09455984784961 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-27.91661 4.569 -27.98118" rotation="0 -91.095 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-11.63146 4.51629 -8.92039" rotation="0 -91.095 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-23.40499 4.56935 -12.71846" rotation="0 -91.09455984784961 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-9.91297 4.424 -20.64912" rotation="0 -0.957 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-18.31221 4.424 -20.36388" rotation="0 90.207 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-27.917 5.20349 -27.981" rotation="0 -91.095 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-11.63146 5.21766 -8.92039" rotation="0 -91.095 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-23.40499 5.27058 -12.71846" rotation="0 -91.09455984784961 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-9.92284 5.11617 -20.64912" rotation="0 -0.957 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-18.312 5.17337 -20.25054" rotation="0 90.207 0" scale="0.698 0.632 0.67"></a-entity>
 
                     <!--JUAN PABLO ECHEVERRI-->
                     <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="31.99849 4.424 -6.917" rotation="0 90.207 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="17.081 4.424 -11.12539" rotation="0 -0.957 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="19.52929 5.193 -33.73915" rotation="0 -180 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="14.08354 4.424 -23.60054" rotation="0 90.207 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="19.27991 4.79161 -19.26997" rotation="0 -91.09455984784961 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="2.81938 5.193 -18.11026" rotation="0 -180 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="17.081 5.09312 -11.12539" rotation="0 -0.957 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="19.47838 5.39644 -33.73915" rotation="0 -180 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="14.08354 5.35255 -23.47441" rotation="0 90.207 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="19.27991 5.12207 -19.29565" rotation="0 -91.09455984784961 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="2.78406 5.193 -18.11" rotation="0 -180 0" scale="0.698 0.632 0.67"></a-entity>
 
                     <!--CLAUDE CAHUN-->
                     <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-20.08938 4.424 -65.7396" rotation="0 90.207 0" scale="0.698 0.632 0.67"></a-entity>
@@ -627,11 +656,11 @@
 
                     <!--GRACIELA ITURBIDE-->
                     <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="22.81998 4.792 -66.06877" rotation="0 -91.095 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="21.6961 5.193 -46.34621" rotation="0 -180 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="27.57195 4.424 -53.01743" rotation="0 90.207 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="5.3378 4.792 -66.19279" rotation="0 -91.095 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="12.20217 4.228 -42.33897" rotation="0 -63.13593831885081 0" scale="0.698 0.632 0.67"></a-entity>
-                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="7.9731 5.193 -59.31749" rotation="0 -180 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="21.67278 5.23982 -46.34621" rotation="0 -180 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="27.57195 5.09028 -52.95126" rotation="0 90.207 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="5.3378 5.19096 -66.19279" rotation="0 -91.095 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="12.10372 5.43098 -42.62557" rotation="0 -63.13593831885081 0" scale="0.698 0.632 0.67"></a-entity>
+                    <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="8.07935 5.193 -59.31749" rotation="0 -180 0" scale="0.698 0.632 0.67"></a-entity>
                 
                 <!--En las entradas-->
                     <!--Entrada central-->
@@ -649,7 +678,6 @@
                         <a-entity geometry="primitive: torus; radius: 2; radiusTubular: 0.5" material="side: double; color: #9b9b9b" position="2.29312 5.68568 3.357" scale="0.042 0.04 0.029" rotation="0 180 0"></a-entity>
                         <a-entity geometry="primitive: torus; radius: 2; radiusTubular: 0.5" material="side: double; color: #9b9b9b" position="2.29174 5.56204 3.357" scale="0.042 0.04 0.029" rotation="0 90 0"></a-entity>
                         <a-entity geometry="primitive: torus; radius: 2; radiusTubular: 0.5" material="side: double; color: #9b9b9b" position="2.29282 5.40063 3.357" scale="0.042 0.04 0.029" rotation="0 180 0"></a-entity>
-
 
                     <!--Entrada trasera-->
                     <a-entity obj-model="mtl: assets/blender/mascaraneg.mtl; obj: assets/blender/mascaraneg.obj" position="-25.58882 4.847 -75.42979" rotation="" scale="0.698 0.632 0.670"></a-entity>
@@ -686,29 +714,44 @@
                         <a-entity geometry="primitive: torus; radius: 2; radiusTubular: 0.5" material="side: double; color: #9b9b9b" position="39.46476 5.914 -60.765" scale="0.042 0.04 0.029" rotation="0 90 0"></a-entity>
 
             <!--Sala central-->
-            <a-assets>
-                <a-asset-item id="salarellena2-obj" src="salarellena2.obj"></a-asset-item>
-                <a-asset-item id="salarellena2-mtl" src="salarellena2.mtl"></a-asset-item>
-            </a-assets>
-            <a-entity 
-            obj-model="mtl: assets/blender/salarellena2.mtl; obj: assets/blender/salarellena2.obj" position="-1.651 -2.048 -34.67592" visible="" scale="1.867 1.464 1.925" rotation="0 -0.525 0">
-            </a-entity>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="-8.36917 3.77277 -27.88212" scale="0.645 2.684 0.663"></a-cylinder>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="-11.52536 3.77277 -34.12096" scale="0.64477 2.684 0.66272"></a-cylinder>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="12.25482 3.77277 -34.15853" scale="0.64477 2.684 0.66272"></a-cylinder>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="8.94885 3.77277 -27.74274" scale="0.64477 2.684 0.66272"></a-cylinder>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="2.94271 3.77277 -48.75915" scale="0.64477 2.684 0.66272"></a-cylinder>
-            <a-cylinder color="#454545" height="3" radius="1.5" position="-2.00686 3.77277 -48.80581" scale="0.645 2.684 0.663"></a-cylinder>
+
+                <!--Estructura-->
+                <a-assets>
+                    <a-asset-item id="salarellena2-obj" src="salarellena2.obj"></a-asset-item>
+                    <a-asset-item id="salarellena2-mtl" src="salarellena2.mtl"></a-asset-item>
+                </a-assets>
+                <a-entity 
+                obj-model="mtl: assets/blender/salarellena2.mtl; obj: assets/blender/salarellena2.obj" position="-1.651 -2.048 -34.67592" visible="" scale="1.867 1.464 1.925" rotation="0 -0.525 0">
+                </a-entity>
+                <a-cylinder color="#454545" height="3" radius="1.5" position="-8.36917 3.77277 -27.88212" scale="0.645 2.684 0.663"></a-cylinder>
+                <a-cylinder color="#454545" height="3" radius="1.5" position="-11.52536 3.77277 -34.12096" scale="0.64477 2.684 0.66272"></a-cylinder>
+                <a-cylinder color="#454545" height="3" radius="1.5" position="12.25482 3.77277 -34.15853" scale="0.64477 2.684 0.66272"></a-cylinder>
+                <a-cylinder color="#454545" height="3" radius="1.5" position="8.94885 3.77277 -27.74274" scale="0.64477 2.684 0.66272"></a-cylinder>
+                <a-cylinder color="#454545" height="3" radius="1.5" position="2.94271 3.77277 -48.75915" scale="0.64477 2.684 0.66272"></a-cylinder>
+                <a-cylinder color="#454545" height="3" radius="1.5" position="-2.00686 3.77277 -48.80581" scale="0.645 2.684 0.663"></a-cylinder>
+
+                <!--PIEZA COLECTIVA-->
+                <!--a-assets>
+                    <img id="claude" src="assets/images/mapa.jpg">
+                </a-assets-->
+                <a-box static-body="sphereRadius: NaN" position="0.36723 3.61275 -39.24811" rotation="0 -180 0" color="#929393" scale="4.72402 7.409 0.6" velocity=""></a-box>
+                <a-box static-body="sphereRadius: NaN" position="-1.45017 3.61275 -36.08825" rotation="0 116.0497366147726 0" color="#929393" scale="4.72402 7.409 0.6" velocity=""></a-box>
+                <a-box static-body="sphereRadius: NaN" position="2.16247 3.61275 -36.08338" rotation="0 -116.0497366147726 0" color="#929393" scale="4.72402 7.409 0.6" velocity=""></a-box>
+                <a-cylinder color="#454545" height="3" radius="1.5" position="0.34368 1.00315 -33.48361" scale="0.21 1.15164 0.21"></a-cylinder>
+                <a-cylinder color="#454545" height="3" radius="1.5" position="3.31081 1.00315 -38.95342" scale="0.21 1.15164 0.21"></a-cylinder>
+                <a-cylinder color="#454545" height="3" radius="1.5" position="-2.63296 1.00315 -38.95342" scale="0.21 1.15164 0.21"></a-cylinder>
+
+                <!--Máscaras-->
+
 
         <!--Mapas-->
         <a-assets>
-            <img id="claude" src="assets/images/mapa.jpg">
+            <img id="mapa" src="assets/images/mapa.jpg">
         </a-assets>
         <a-box src="assets/images/mapa.jpg" scale="4.545 5.075 0.25" position="-0.086 3.735 -6.63732" rotation="0 180 0"></a-box>
-        <a-box src="assets/images/mapa.jpg" scale="4.545 5.075 0.25" position="18.085 3.671 -61.600" rotation="0 180 0"></a-box>
-        <a-box src="assets/images/mapa.jpg" scale="4.545 5.075 0.25" position="-21.66436 3.724 -58.63294" rotation="0 180 0"></a-box>
+        <a-box src="assets/images/mapa.jpg" scale="4.545 5.075 0.25" position="27.57019 3.671 -67.97385" rotation="0 180 0"></a-box>
+        <a-box src="assets/images/mapa.jpg" scale="4.545 5.075 0.25" position="-28.54597 3.724 -63.80752" rotation="0 180 0"></a-box>
 
-       
     </a-scene>
 </body>
 </html>
